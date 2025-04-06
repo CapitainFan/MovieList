@@ -13,7 +13,14 @@ function Home() {
   useEffect(() => {
     const loadPopularMovies = async () => {
       try {
-        const popularMovies = await getPopularMovies();
+        // const popularMovies = await getPopularMovies();
+        const popularMovies = [
+          {"id": 1, "title": "name", "release_date": "01-01-2025"},
+          {"id": 2, "title": "name", "release_date": "01-01-2025"},
+          {"id": 3, "title": "name", "release_date": "01-01-2025"},
+          {"id": 4, "title": "name", "release_date": "01-01-2025"},
+      
+        ]
 
         setMovies(popularMovies);
       } catch (err) {
